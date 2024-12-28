@@ -1,6 +1,6 @@
 # sysopctl
 ```
-abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh --help
+amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh --help
 Usage: sysopctl <command> [options]
 Commands:
   service list   - List all running processes (replaces system services in WSL)
@@ -15,12 +15,12 @@ Commands:
   ```
 
 ```
-abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh --version
+amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh --version
 sysopctl version v0.1.0
 ```
 ```
 List Running Services:
-abhay-Das@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh service list
+amitabh-kumar@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh service list
 Listing all running processes...
 USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
 root         1  0.7  0.0   2236  1564 ?        Sl   19:20   0:06 /init
@@ -39,7 +39,7 @@ abhayd+  3256  0.0  0.0   7480  3196 pts/0    R+   19:34   0:00 ps aux
 
 ```
 View System Load:
-abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh system load
+amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh system load
 Current system load averages:
  19:35:07 up 14 min,  0 users,  load average: 0.02, 0.01, 0.00
  ```
@@ -50,20 +50,20 @@ Current system load averages:
 • Manage System Services:
 
 Start a service: $ sysopctl service start <service-name>
-abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh service start apache2
+amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh service start apache2
 Starting service: apache2
 Service 'apache2' started successfully (simulated).
 
 
 Stop a service: $ sysopctl service stop <service-name>
-abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh service stop apache2
+amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh service stop apache2
 Stopping service: apache2
 Service 'apache2' stopped successfully (simulated).
 ```
 
 ```
 Check Disk Usage:
-abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh disk usage
+amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh disk usage
 Disk usage statistics by partition:
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sdc        251G  1.5G  237G   1% /
@@ -85,7 +85,7 @@ drvfs           476G  366G  110G  77% /mnt/c
 ```
 • Monitor System Processes:
 
-abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh process monitor
+amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh process monitor
 Monitoring system processes...
 top - 19:39:10 up 19 min,  0 users,  load average: 0.00, 0.00, 0.00
 Tasks:  12 total,   1 running,  11 sleeping,   0 stopped,   0 zombie
@@ -110,7 +110,7 @@ MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   7344.9 avail Mem
 
  ```
  Analyze System Logs:
- abhaydas@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh logs analyze
+ amitabh@LAPTOP-UK4S5VBB:~/sysopctl$ ./sysopctl.sh logs analyze
 Analyzing system logs for recent critical entries...
 No journal files were found.
 -- No entries --
@@ -119,7 +119,7 @@ No journal files were found.
 ```
  Backup System Files:
 
- abhaydas@LAPTOP-UK4S5VBB :~ /sysopctl$ . /sysopctl. sh backup /home/user/Document
+ amitabh@LAPTOP-UK4S5VBB :~ /sysopctl$ . /sysopctl. sh backup /home/user/Document
  Backing up files from /home/user/Documents ...
 sending incremental file list
 rsync: [sender] change_dir "/home/user" failed: No such file or directory (2)
@@ -328,6 +328,6 @@ The `sysopctl` tool relies on native Linux utilities like `ps`, `df`, `uptime`, 
   
   ```
 
-Made Via Abhay Das.
+Made Via Amitabh Kumar.
 ---
 
